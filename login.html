@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InstaVision™ | Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Press Start 2P', monospace;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-black p-4">
+    
+    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg border-4 border-blue-500 rounded-lg p-6 bg-gray-900 text-xs space-y-5">
+      
+      
+      <h1 class="text-center text-pink-400 text-sm sm:text-base">🔐 Welcome to InstaVision</h1>
+
+      
+      <form class="space-y-4">
+        
+        <div>
+          <label for="username" class="block mb-1 text-green-300">Username</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter username"
+            class="w-full px-2 py-2 text-[10px] sm:text-xs bg-black text-green-200 placeholder-green-500 border-2 border-green-400 focus:outline-pink-400"
+          />
+        </div>
+
+        
+        <div>
+          <label for="password" class="block mb-2 text-green-300">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+            class="w-full px-2 py-2 text-[10px] sm:text-xs bg-black text-green-200 placeholder-green-500 border-2 border-green-400 focus:outline-pink-400"
+          />
+        </div>
+
+        <a href="loading.html"
+        class="block text-center w-full py-2 text-[10px] sm:text-xs bg-pink-500 hover:bg-pink-600 text-white border border-pink-300">
+        Login</a>
+
+        
+        <p class="text-center text-yellow-300 text-[10px] sm:text-xs mt-2">
+          <a href="#" class="underline hover:text-pink-400">Forgot password?</a>
+        </p>
+      </form>
+    </div>
+
+  </body>
+</html>

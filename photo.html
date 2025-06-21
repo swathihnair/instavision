@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InstaVision™ | Photos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Press Start 2P', monospace;
+    }
+  </style>
+</head>
+<body class="min-h-screen p-4 md:p-6">
+
+  
+  <header class="flex flex-col sm:flex-row justify-between items-center border-b-4 border-pink-500 pb-4 mb-6 gap-4 sm:gap-0">
+    <h1 class="text-pink-400 text-xl tracking-wider text-center sm:text-left">📸 InstaVision™</h1>
+    
+    <nav class="space-x-2 sm:space-x-4 text-green-300 text-xs text-center">
+      <a href="index.html">🏠 Home</a>
+      <a href="profile.html">📄 Profile</a>
+      <a href="explore.html">🧭 Explore</a>
+      <a href="scarp.html">💬 Scrapbook</a>
+      <a href="index.html">👥 Friends</a>
+    </nav>
+    
+    <button class="bg-pink-600 px-3 py-1 text-white border border-pink-300 text-xs hover:bg-pink-700">
+      + Upload
+    </button>
+  </header>
+
+
+  <section class="border-4 border-blue-500 bg-gray-800 p-4 md:p-6 rounded">
+    <h3 class="text-green-300 mb-4 text-sm text-center">📷 Photo Gallery</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+      
+      <div class="aspect-square bg-gray-700 border border-pink-400 overflow-hidden">
+        <img src="asset/image/jf1.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-200" />
+      </div>
+      <div class="aspect-square bg-gray-700 border border-pink-400 overflow-hidden">
+        <img src="asset/image/jf2.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-200" />
+      </div>
+      <div class="aspect-square bg-gray-700 border border-pink-400 overflow-hidden">
+        <img src="asset/image/jf3.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-200" />
+      </div>
+      <div class="aspect-square bg-gray-700 border border-pink-400 overflow-hidden">
+        <img src="asset/image/jf4.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-200" />
+      </div>
+      <div class="aspect-square bg-gray-700 border border-pink-400 overflow-hidden">
+        <img src="asset/image/jf5.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-200" />
+      </div>
+      <div class="aspect-square bg-gray-700 border border-pink-400 overflow-hidden">
+        <img src="asset/image/g3.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-200" />
+      </div>
+      <div class="aspect-square bg-gray-700 border border-pink-400 overflow-hidden">
+        <img src="asset/image/g4.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-200" />
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InstaVision™ | Loading...</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .blinking {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes scanline {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(100%); }
+    }
+
+    .scanline {
+      animation: scanline 1.5s linear infinite;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-black overflow-hidden relative">
+
+  <div class="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
+    <div class="w-full h-1 bg-green-400 opacity-10 scanline"></div>
+  </div>
+
+  
+  <div class="text-center z-10 space-y-4">
+    <h1 class="text-green-300 text-xs sm:text-sm md:text-base blinking">LOADING</h1>
+    <p class="text-pink-400 text-[10px] sm:text-xs">Please wait... Booting InstaVerse 🪐</p>
+  </div>
+
+  
+  <script>
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 3000); // Redirect after 3 seconds
+  </script>
+
+</body>
+</html>
