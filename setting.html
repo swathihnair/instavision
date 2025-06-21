@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InstaVision™ | Settings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Press Start 2P', monospace;
+    }
+    input, select {
+      font-family: 'Press Start 2P', monospace;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 bg-black">
+
+  <div class="w-full max-w-2xl border-4 border-blue-500 p-6 bg-gray-900 rounded-lg text-xs space-y-6">
+
+    
+    <h1 class="text-center text-pink-400 text-sm sm:text-base">⚙️ InstaVision™ Settings</h1>
+
+    
+    <form class="space-y-4">
+
+      
+      <div>
+        <label for="username" class="text-green-300 block mb-2">🧑 Username</label>
+        <input type="text" id="username" placeholder="Jennifer Folds"
+          class="w-full px-2 py-2 bg-black text-green-200 placeholder-green-500 border-2 border-green-400 text-[10px] sm:text-xs" />
+      </div>
+
+      
+      <div>
+        <label for="email" class="text-green-300 block mb-2">📧 Email</label>
+        <input type="email" id="email" placeholder="jennifer@email.com"
+          class="w-full px-2 py-2 bg-black text-green-200 placeholder-green-500 border-2 border-green-400 text-[10px] sm:text-xs" />
+      </div>
+
+      
+      <div>
+        <label for="password" class="text-green-300 block mb-2">🔐 New Password</label>
+        <input type="password" id="password" placeholder="********"
+          class="w-full px-2 py-2 bg-black text-green-200 placeholder-green-500 border-2 border-green-400 text-[10px] sm:text-xs" />
+      </div>
+
+      
+      <div>
+        <label for="theme" class="text-green-300 block mb-2">🎨 Theme</label>
+        <select id="theme"
+          class="w-full px-2 py-2 bg-black text-green-200 border-2 border-green-400 text-[10px] sm:text-xs">
+          <option>Neon</option>
+          <option>Midnight</option>
+          <option>Vintage CRT</option>
+          <option>Cyber Blue</option>
+        </select>
+      </div>
+
+      
+      <div class="flex items-center gap-2">
+        <input type="checkbox" id="music" class="accent-pink-500 scale-75" />
+        <label for="music" class="text-green-300">🎵 Enable 8-bit Music</label>
+      </div>
+
+      
+      <div class="pt-4">
+        <button type="submit"
+          class="w-full py-2 bg-pink-500 hover:bg-pink-600 text-white border border-pink-300 text-[10px] sm:text-xs">
+          💾 Save Settings
+        </button>
+      </div>
+    </form>
+
+
+    <div class="text-center mt-4">
+      <a href="index.html" class="text-yellow-300 hover:text-pink-400 text-[10px] sm:text-xs">⬅️ Back to Profile</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
